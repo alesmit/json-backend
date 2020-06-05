@@ -6,10 +6,10 @@ Spin up a simple backend storing data in json files for frontend dev purposes
 
 This project can be used to quickly make up http endpoints to support local frontend development.
 
-The reason why I made this project is that, when developing a frontend app, we could have scenarios in which we don't have endpoints ready-to-use, or we can't just run the real backend locally.
-For those cases it's just simpler to write some mock endpoints from scratch, so we can keep focusing on frontend stuff. The goal of this starter project is to provide a lightweight express app where we can go and write endpoints in matter of minutes.
+The reason why I made this project is that, when developing a frontend app, we could have scenarios in which we don't have http endpoints ready-to-use, or we can't just run the real backend locally.
+For those cases it's just simpler to write some minimal backend code from scratch, so we can keep focusing on frontend stuff. The goal of this starter project is to provide a lightweight express app where we can go and write endpoints in matter of minutes.
 
-For sake of simplicity, the app stores data to JSON files. Ideally, each json file would correspond to a table of a relational schema, so those files are kept in a "tables" directory. As we store data in the "tables" directory, we have also a "controllers" directory where to keep the endpoint handlers.
+For sake of simplicity, the app stores data to JSON files. Ideally, each json file would correspond to a table of a relational schema, so those files are kept in a "tables" directory. As we store data in the "tables" directory, we have also a "controllers" one where to keep the endpoint handlers.
 
 ## How to use it
 
@@ -20,7 +20,7 @@ npm i
 npm start
 ```
 
-The app comes with an "example" model already in place. For each model you would typically have a json file (table), and a js file (controller) where to write the handlers for each endpoint. Finally, in the index.js file we link the endpoint's route and method to a specific handler that we import from the controller.
+The app comes with an "example" model already in place. For each model we would typically have a json file (table), and a js file (controller) where to write the handlers for each endpoint. Finally, in the index.js file we link the endpoint's route and method to a specific handler that we export from the controller.
 
 ### Models generator
 
