@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "name": "Alessandro",
+      "someKey": "Some value",
+      "someNumber": 2000,
+      "someBoolean": false,
+      "someNull": null,
+      "someDate": "2020-06-05",
+      "id": 1
+    }
+  ]
+}
